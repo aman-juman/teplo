@@ -1,0 +1,134 @@
+.wrap{
+  height: 900px;
+  padding: 50px 0;
+  background: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.3fr;
+  .imgBlock{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .imgBlockBottom{
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      height: 130px;
+      background: rgba(81, 83, 84, 0.8);
+      .experience{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.3fr;
+        gap: 20px;
+        align-items: center;
+        font-family: 'Montserrat', 'sans-serif';
+        .experienceYear{
+          font-weight: 700;
+          font-size: 96px;
+          line-height: 1;
+          color: var(--primary);
+        }
+        .experienceText{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.2;
+          color: var(--white);
+        }
+      }
+    }
+  }
+  .contentBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top{
+
+      .listWrap{
+        display: flex;
+        justify-content: flex-end;
+
+        .list{
+          display: grid;
+          gap: 20px;
+
+          .listItem{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .listItemContent{
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 1.2;
+              color: var(--black);
+              .listItemTitle{
+                font-size: 16px;
+              }
+              .listItemDescription{
+                font-weight: 500;
+                margin-top: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .center{
+      position: relative;
+
+      .centerBg{
+        width: 250px;
+        height: 400px;
+        background: rgba(15, 184, 238, 0.4);
+        position: absolute;
+        left: -150px;
+        top: -250px;
+        transition: all 0.2s ease-in-out;
+        animation: backgroundAnimation 5s infinite;
+      }
+      .centerContent{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 1;
+        color: var(--black);
+        padding-left: 20px;
+        .centerSubTitle{
+
+        }
+        .centerTitle{
+          font-family: 'Alumni Sans', 'sans-serif';
+          font-weight: 700;
+          font-size: 64px;
+          margin-top: 20px;
+        }
+      }
+    }
+    .bottom{
+      padding-left: 100px;
+
+      .description{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--gray);
+        padding-left: 30px;
+        border-left: 1px solid var(--gray);
+        margin-bottom: 50px;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+@keyframes backgroundAnimation {
+  0%{
+    background: rgba(15, 184, 238, 0.4);
+  }
+  50%{
+    background: rgba(15, 184, 238, 0.7);
+  }
+  100%{
+    background: rgba(15, 184, 238, 0.4);
+  }
+
+}

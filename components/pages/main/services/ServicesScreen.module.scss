@@ -1,0 +1,120 @@
+.content{
+  padding: 50px 10px;
+  font-family: 'Noto Sans', 'sans-serif';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--black);
+
+
+  .titleWrap{
+    display: flex;
+    align-items: center;
+    gap: 0 100px;
+
+    .blockTitle{
+      font-size: 48px;
+
+    }
+    .blockDescription{
+      margin-left: 20px;
+      position: relative;
+
+      &:before{
+        position: absolute;
+        content: "";
+        display: block;
+        height: 5px;
+        width: 50px;
+        background: var(--primary);
+        top: 40%;
+        left: -60px;
+      }
+    }
+  }
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 50px 0;
+
+
+    .listItem{
+      margin: 10px;
+      width: 370px;
+      box-sizing: border-box;
+      display: grid;
+
+      &:hover{
+
+      }
+
+      .listItemTop{
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 30px;
+        justify-content: center;
+
+        .imgBlock{
+          position: relative;
+
+          .img{
+            position: relative;
+            &:hover{
+              opacity: 0.6;
+            }
+
+          }
+          .imgBlockCube{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: var(--primary);
+
+          }
+        }
+        .priceBlock{
+
+          .price{
+            font-family: 'Noto Sans', 'sans-serif';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 1.2;
+            color: var(--black)
+          ;
+            margin-bottom: 35px;
+          }
+        }
+      }
+      .listItemBottom{
+        display: grid;
+        position: relative;
+
+        .listItemTitleBlock{
+          position: absolute;
+          top: -30px;
+          left: 0;
+          background: var(--white);
+          box-sizing: border-box;
+
+
+          .listItemTitle{
+            font-size: 16px;
+            padding: 10px 10px 0 5px;
+
+
+          }
+        }
+        .listItemDescription{
+          font-family: 'Montserrat', 'sans-serif';
+          font-weight: 400;
+          color: var(--gray);
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
