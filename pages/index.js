@@ -10,6 +10,7 @@ import Map from "@/components/map/Map";
 import MapScreen from "@/components/map/Map";
 import ContactScreen from "@/components/pages/main/contact/Contact";
 import Footer from "@/layout/footer/Footer";
+import Advantage from "@/components/pages/main/advantage/Advantage";
 
 
 
@@ -25,6 +26,7 @@ export default function Home() {
         <About />
         <ServicesScreen />
         <CallOrder />
+        <Advantage />
         <StepScreen />
       <ContactScreen />
       <Footer />
