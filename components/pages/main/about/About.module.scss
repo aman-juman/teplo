@@ -8,6 +8,7 @@
     position: relative;
     height: 100%;
     width: 100%;
+
     .imgBlockBottom{
       position: absolute;
       left: 0;
@@ -92,6 +93,7 @@
         line-height: 1;
         color: var(--black);
         padding-left: 20px;
+        z-index: 5;
         .centerSubTitle{
 
         }
@@ -125,7 +127,7 @@
     background: rgba(15, 184, 238, 0.4);
   }
   50%{
-    background: rgba(15, 184, 238, 0.7);
+    background: rgba(15, 184, 238, 0.2);
   }
   100%{
     background: rgba(15, 184, 238, 0.4);

@@ -26,11 +26,11 @@ const MyButton = ({
 
 MyButton.propTypes = {
   title: PropTypes.string,
-  bold: PropTypes.string,
+  bold: PropTypes.bool,
   uppercase: PropTypes.bool,
   outline: PropTypes.bool,
-  size: PropTypes.oneOfType(["md", "lg"]),
-  background: PropTypes.oneOfType(["primary", "secondary"]),
+  size: PropTypes.oneOf(["md", "lg"]),
+  background: PropTypes.oneOf(["primary", "secondary"]),
   round: PropTypes.bool,
   animation: PropTypes.bool,
 };

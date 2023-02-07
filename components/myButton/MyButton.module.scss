@@ -23,7 +23,9 @@
   border: 3px solid var(--secondary);
 
   &:hover{
-    background: transparent;
+    background: var(--primary);
+    color: var(--white);
+    border: 3px solid var(--primary);
   }
 }
 .round{
