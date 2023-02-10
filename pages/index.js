@@ -11,6 +11,7 @@ import MapScreen from "@/components/map/Map";
 import ContactScreen from "@/components/pages/main/contact/Contact";
 import Footer from "@/layout/footer/Footer";
 import Advantage from "@/components/pages/main/advantage/Advantage";
+import ServiceBlock from "@/admin/services/ServiceBlock";
 
 
 
@@ -29,6 +30,7 @@ export default function Home() {
         <Advantage />
         <StepScreen />
       <ContactScreen />
+        {/*<ServiceBlock />*/}
       <Footer />
     </>
   )

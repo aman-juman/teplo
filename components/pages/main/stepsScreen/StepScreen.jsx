@@ -64,7 +64,7 @@ const StepScreen = () => {
     );
   });
   return (
-    <section>
+    <section className={styles.section}>
       <div className="container">
         <div className={styles.content}>
           <div className={styles.titleWrap}>
